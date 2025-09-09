@@ -23,11 +23,11 @@ console.log(userName('Людмила'));
 const greetUser = (name) => {
     return `Привіт, ${name}!`;
 };
+console.log(greetUser("Валентина"));
 
 // або
 const square = (x) => x * x;
 
-console.log(greet("Валентина"));
 console.log(square(6));
 
 // 4) Function Constructor
@@ -62,17 +62,9 @@ function twoNumbers(x, y) {
     }
 }
 
-twoNumbers(8, 4);
+twoNumbers(0);
 
 // 4 Напиши функцію, яка обчислює факторіал переданого їй числа.
-
-// ФУНКЦІЯ факторіал(n):
-//   ЯКЩО n < 0, ПОВЕРНУТИ "Невизначено"
-//   ЯКЩО n == 0, ПОВЕРНУТИ 1
-//   ЗМІННА результат = 1
-//   ДЛЯ i ВІД 1 ДО n:
-//     результат = результат * i
-//   ПОВЕРНУТИ результат
 
 function factorial(n) {
     let result = 1;
@@ -83,12 +75,12 @@ function factorial(n) {
     } else {
         for(let i = 1; i <= n; i++) {
             result = result * i;
-            console.log(result);
         }
+        console.log(result);
     }
 }
 
-factorial(5);
+factorial(7);
 
 // 5 Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.
 let arg1 = prompt('Введи перше число');
@@ -137,7 +129,7 @@ function perfectNumb(n) {
     return sumDividers === n;
 }
 
-console.log(perfectNumb(27));
+console.log(perfectNumb(6));
 
 // 2
 // Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, 
